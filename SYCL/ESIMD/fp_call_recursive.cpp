@@ -6,8 +6,10 @@
 //
 //===----------------------------------------------------------------------===//
 // REQUIRES: gpu
+// Recursion is not supported in ESIMD (intel/llvm PR#3390)
+// REQUIRES: TEMPORARY_DISBLED
 // UNSUPPORTED: cuda
-// RUN: %clangxx-esimd -Xclang -fsycl-allow-func-ptr -std=c++14 -fsycl %s -o %t.out
+// RUN: %clangxx -Xclang -fsycl-allow-func-ptr -fsycl %s -o %t.out
 // RUN: %GPU_RUN_PLACEHOLDER %t.out
 //
 // The test checks that ESIMD kernels support use of function pointers

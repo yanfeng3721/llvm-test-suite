@@ -39,6 +39,9 @@ SYCL/Functor @AlexeySachkov
 SYCL/GroupAlgorithm @Pennycook @AlexeySachkov
 SYCL/SubGroup @Pennycook @AlexeySachkov
 
+# Group local memory
+SYCL/GroupLocalMemory @sergey-semenov @Pennycook
+
 # Hierarchical parallelism
 SYCL/HierPar @kbobrovs
 
@@ -53,6 +56,9 @@ SYCL/Plugin @smaslov-intel
 
 # Reduction algorithms
 SYCL/Reduction @v-klochkov
+
+# Image sampler
+SYCL/Sampler @cperkinsintel
 
 # Separate compilation
 SYCL/SeparateCompile @AlexeySachkov  @Fznamznon
