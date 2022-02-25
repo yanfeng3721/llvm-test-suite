@@ -16,7 +16,7 @@
 // RUN: %ACC_RUN_PLACEHOLDER %t.out
 
 // Failing on HIP AMD
-// XFAIL: hip_amd || gpu
+// XFAIL: hip_amd || (gpu && linux)
 
 #include <CL/sycl.hpp>
 
